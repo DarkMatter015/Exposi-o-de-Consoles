@@ -88,7 +88,7 @@ div#seriesS-background-1{
     background: radial-gradient(circle, rgb(235, 235, 235), rgb(15, 15, 15));
 }
 div#seriesS-background-2{
-   background: radial-gradient(circle, rgb(255, 255, 255), black);
+   background: radial-gradient(circle, rgb(255, 255, 255), rgb(66, 66, 66));
 }
 #seriesS-background-2 img{
    height: 450px;
@@ -106,9 +106,10 @@ div#seriesX-background-2{
    background: radial-gradient(circle, rgb(0, 105, 5), black);
 }
 #seriesX-background-2 img{
-   height: 450px;
-   width: 650px;
-   -webkit-box-reflect: below -15px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+   bottom: 1%;
+   height: 550px;
+   width: 850px;
+   -webkit-box-reflect: below -190px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
    z-index: 3;
 }
 
@@ -176,22 +177,22 @@ div#play5-background-2{
    
 }
 
-/* Nintendo Normal */
+/* Nintendo Lite */
 div#switch-background-1{
-    z-index: 6;
+    z-index: 7;
     background: radial-gradient(circle, rgb(255, 29, 29), rgb(15, 15, 15));
 }
 div#switch-background-2{
    background: radial-gradient(circle, rgb(167, 0, 0), black);
 }
 #switch-background-2 img{
-   z-index: 6;
+   z-index: 7;
    height: 400px;
    width: 600px;
    -webkit-box-reflect: below -0% linear-gradient(transparent, rgba(0, 0, 0, 0.5));  
 }
 
-/* Nontendo Oled */
+/* Nintendo Oled */
 div#Oled-background-1{
     z-index: 7;
     background: radial-gradient(circle, rgb(255, 123, 0), rgb(15, 15, 15));
