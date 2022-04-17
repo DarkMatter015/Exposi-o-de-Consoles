@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+h2{
+    white-space: nowrap;
+    text-align: center;
+    font-size: 25vmin;
+    font-family: sans-serif;
+    position: absolute;
+    font-size: 30vmin;
+    z-index: 3;
+}
+
+.B1{
+   position: relative;
+   height: 450px;
+   width: 100vw;
+   display: grid;
+   justify-items: center;
+}
+
+.B2{
+   position: relative;
+   height: 210px;
+   width: 100vw;
+   display: grid;
+   justify-items: center;
+}
+
+img{
+   bottom: 50%;
+   position: absolute;
+}
+
+div#Reference{
+   top: 0%;
+   left: 0%;
+   position: fixed;
+   display: block;
+   z-index: 10000;
+   color: white;
+   font-size: 0.8rem;
+}
+
+/* Xbox Series S */
+div#seriesS-background-1{
+   z-index: 0;
+    background: radial-gradient(circle, rgb(235, 235, 235), rgb(15, 15, 15));
+}
+div#seriesS-background-2{
+   background: radial-gradient(circle, rgb(255, 255, 255), black);
+}
+#seriesS-background-2 img{
+   height: 450px;
+   width: 350px;
+   -webkit-box-reflect: below -3px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+   z-index: 0;
+}
+
+/* Xbox Series X */
+div#seriesX-background-1{
+    background: radial-gradient(circle, rgb(0, 143, 7), rgb(15, 15, 15));
+}
+div#seriesX-background-2{
+   background: radial-gradient(circle, rgb(0, 105, 5), black);
+}
+#seriesX-background-2 img{
+   height: 400px;
+   width: 600px;
+   -webkit-box-reflect: below -8px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+   z-index: 3;
+}
+
+/* Playstation 4 */
+div#play4-background-1{
+    z-index: 5;
+    background: radial-gradient(circle, rgb(63, 63, 63), rgb(15, 15, 15));
+}
+div#play4-background-2{
+   background: radial-gradient(circle, rgb(31, 31, 31), black);
+}
+#play4-background-2 img{
+   z-index: 6;
+   height: 450px;
+   width: 450px;
+   -webkit-box-reflect: below -35px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+   
+}
+
+/* Playstation 5 */
+div#play5-background-1{
+    z-index: 6;
+    background: radial-gradient(circle, rgb(0, 18, 185), rgb(15, 15, 15));
+}
+div#play5-background-2{
+   background: radial-gradient(circle, rgb(0, 24, 129), black);
+}
+#play5-background-2 img{
+   z-index: 6;
+   height: 400px;
+   width: 600px;
+   size: 50%;
+   -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+   
+}
+
+/* Nintendo Normal */
+div#switch-background-1{
+    z-index: 6;
+    background: radial-gradient(circle, rgb(255, 29, 29), rgb(15, 15, 15));
+}
+div#switch-background-2{
+   background: radial-gradient(circle, rgb(167, 0, 0), black);
+}
+#switch-background-2 img{
+   z-index: 6;
+   height: 400px;
+   width: 600px;
+   -webkit-box-reflect: below -0% linear-gradient(transparent, rgba(0, 0, 0, 0.5));  
+}
+
+/* Nontendo Oled */
+div#Oled-background-1{
+    z-index: 6;
+    background: radial-gradient(circle, rgb(255, 123, 0), rgb(15, 15, 15));
+}
+div#Oled-background-2{
+   background: radial-gradient(circle, rgb(167, 75, 0), black);
+}
+#Oled-background-2 img{
+   z-index: 6;
+   height: 350px;
+   width: 600px;
+   -webkit-box-reflect: below -8px linear-gradient(transparent, rgba(0, 0, 0, 0.5));  
+}
