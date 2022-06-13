@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+h2{
+   white-space: nowrap;
+   text-align: center;
+   font-size: 15vw;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   position: absolute;
+   z-index: 3;
+}
+
+.main_content{
+   position: relative;
+}
+
+.info{
+   display: block;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: white;
+   position: absolute;
+   left: 73%;
+   top: 45%;
+   z-index: 10000;
+}
+.info>ul>li{
+   margin-top: 2px;
+}
+
+.B1{
+   position: relative;
+   height: 450px;
+   width: 100vw;
+   display: grid;
+   justify-items: center;
+}
+
+.B2{
+   position: relative;
+   height: 210px;
+   width: 100vw;
+   display: grid;
+   justify-items: center;
+}
+
+span{
+   width: 100px;
+   height: 100px;
+   background-color: transparent;
+   z-index: 100;
+   position: absolute;
+   cursor: pointer;
+}
+span.p1{
+   height: 480px;
+   width: 300px;
+   top: -50%;
+   transform: translateY(-51%);
+}
+
+span.p2{
+   height: 350px;
+   width: 660px;
+   top: -50%;
+   transform: translateY(-25%);
+}
+span.p3{
+   height: 480px;
+   width: 350px;
+   top: -50%;
+   transform: translateY(-51%);
+}
+span.p4{
+   height: 420px;
+   width: 300px;
+   top: -50%;
+   transform: translateY(-43%);
+}
+span.p5{
+   height: 510px;
+   width: 300px;
+   top: -50%;
+   transform: translateY(-47%);
+}
+span.p6{
+   height: 490px;
+   width: 450px;
+   top: -50%;
+   transform: translateY(-38%);
+}
+span.p7{
+   height: 410px;
+   width: 420px;
+   top: -50%;
+   transform: translateY(-50%);
+}
+span.p8{
+   height: 420px;
+   width: 300px;
+   top: -50%;
+   transform: translateY(-48%);
+}
+span.p9{
+   height: 400px;
+   width: 620px;
+   top: -50%;
+   transform: translateY(-47%);
+}
+span.p10{
+   height: 380px;
+   width: 620px;
+   top: -50%;
+   transform: translateY(-40%);
+}
+
+img{
+   bottom: 50%;
+   position: absolute;
+}
+
+div#Reference{
+   top: 0%;
+   left: 1%;
+   position: absolute;
+   z-index: 10;
+   color: white;
+   font-size: 0.7rem;
+}
+
+/* Xbox 360 */
+div#Xbox360-background-1{
+   z-index: 0;
+    background: radial-gradient(circle, #DDF1AB, #50573e);
+}
+div#Xbox360-background-2{
+   background: radial-gradient(circle, #b5e04f, #45530c);
+}
+#Xbox360-background-2 img{
+   height: 450px;
+   width: 350px;
+   -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+   z-index: 0;
+}
+
+/* Xbox One */
+div#XboxOne-background-1{
+   z-index: 1;
+    background: radial-gradient(circle, #60A842, #1d3314);
+}
+div#XboxOne-background-2{
+   background: radial-gradient(circle, #0a831a, rgb(23, 95, 9));
+}
+#XboxOne-background-2 img{
+   bottom: -40%;
+   height: 600px;
+   width: 700px;
+   -webkit-box-reflect: below -290px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+   z-index: 1;
+}
+
+/* Xbox Series S */
+div#seriesS-background-1{
+   z-index: 2;
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(15, 15, 15));
+}
+div#seriesS-background-2{
+   background: radial-gradient(circle, rgb(255, 255, 255), rgb(80, 79, 79));
+}
+#seriesS-background-2 img{
+   height: 450px;
+   width: 350px;
+   -webkit-box-reflect: below -3px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+   z-index: 2;
+}
+
+/* Xbox Series X */
+div#seriesX-background-1{
+   z-index: 3;
+    background: radial-gradient(circle, #4b4b53, #1F1F22);
+}
+div#seriesX-background-2{
+   background: radial-gradient(circle, #4b4b53, #16161a);
+}
+#seriesX-background-2 img{
+   bottom: 1%;
+   height: 550px;
+   width: 850px;
+   -webkit-box-reflect: below -190px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+   z-index: 3;
+}
+
+/* Playstation 2 */
+div#play2-background-1{
+    z-index: 4;
+    background: radial-gradient(circle, rgb(40, 41, 68), rgb(15, 15, 15));
+}
+div#play2-background-2{
+   background: radial-gradient(circle, rgb(40, 48, 73), black);
+}
+#play2-background-2 img{
+   bottom: 50px;
+   height: 500px;
+   width: 450px;
+   -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+   z-index: 4;
+}
+
+/* Playstation 3 */
+div#play3-background-1{
+    z-index: 4;
+    background: radial-gradient(circle, rgb(0, 14, 138), rgb(15, 15, 15));
+}
+div#play3-background-2{
+   background: radial-gradient(circle, rgb(16, 34, 90), black);
+}
+#play3-background-2 img{
+   bottom: -0.1%;
+   height: 500px;
+   width: 450px;
+   -webkit-box-reflect: below -80px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+   z-index: 4;
+}
+
+/* Playstation 4 */
+div#play4-background-1{
+    z-index: 4;
+    background: radial-gradient(circle, rgb(63, 63, 63), rgb(15, 15, 15));
+}
+div#play4-background-2{
+   background: radial-gradient(circle, rgb(31, 31, 31), black);
+}
+#play4-background-2 img{
+   z-index: 4;
+   height: 450px;
+   width: 450px;
+   -webkit-box-reflect: below -35px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+/* Playstation 5 */
+div#play5-background-1{
+    z-index: 5;
+    background: radial-gradient(circle, rgb(0, 18, 185), rgb(15, 15, 15));
+}
+div#play5-background-2{
+   background: radial-gradient(circle, rgb(0, 24, 129), black);
+}
+#play5-background-2 img{
+   z-index: 5;
+   height: 400px;
+   width: 600px;
+   size: 50%;
+   -webkit-box-reflect: below -5px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+   
+}
+
+/* Nintendo Lite */
+div#switch-background-1{
+    z-index: 7;
+    background: radial-gradient(circle, rgb(255, 29, 29), rgb(15, 15, 15));
+}
+div#switch-background-2{
+   background: radial-gradient(circle, rgb(167, 0, 0), black);
+}
+#switch-background-2 img{
+   z-index: 7;
+   height: 400px;
+   width: 600px;
+   -webkit-box-reflect: below -0% linear-gradient(transparent, rgba(0, 0, 0, 0.5));  
+}
+
+/* Nintendo Oled */
+div#Oled-background-1{
+    z-index: 7;
+    background: radial-gradient(circle, rgb(255, 123, 0), rgb(15, 15, 15));
+}
+div#Oled-background-2{
+   background: radial-gradient(circle, rgb(167, 75, 0), black);
+}
+#Oled-background-2 img{
+   z-index: 7;
+   height: 350px;
+   width: 600px;
+   -webkit-box-reflect: below -8px linear-gradient(transparent, rgba(0, 0, 0, 0.5));  
+}
