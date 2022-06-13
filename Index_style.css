@@ -11,6 +11,8 @@ body{
     justify-content: center;
     position: relative;
     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
 }
 h2{
    white-space: nowrap;
@@ -19,6 +21,23 @@ h2{
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    position: absolute;
    z-index: 3;
+}
+
+.main_content{
+   position: relative;
+}
+
+.info{
+   display: block;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: white;
+   position: absolute;
+   left: 73%;
+   top: 45%;
+   z-index: 10000;
+}
+.info>ul>li{
+   margin-top: 2px;
 }
 
 .B1{
@@ -35,6 +54,76 @@ h2{
    width: 100vw;
    display: grid;
    justify-items: center;
+}
+
+span{
+   width: 100px;
+   height: 100px;
+   background-color: transparent;
+   z-index: 100;
+   position: absolute;
+   cursor: pointer;
+}
+span.p1{
+   height: 480px;
+   width: 300px;
+   top: -50%;
+   transform: translateY(-51%);
+}
+
+span.p2{
+   height: 350px;
+   width: 660px;
+   top: -50%;
+   transform: translateY(-25%);
+}
+span.p3{
+   height: 480px;
+   width: 350px;
+   top: -50%;
+   transform: translateY(-51%);
+}
+span.p4{
+   height: 420px;
+   width: 300px;
+   top: -50%;
+   transform: translateY(-43%);
+}
+span.p5{
+   height: 510px;
+   width: 300px;
+   top: -50%;
+   transform: translateY(-47%);
+}
+span.p6{
+   height: 490px;
+   width: 450px;
+   top: -50%;
+   transform: translateY(-38%);
+}
+span.p7{
+   height: 410px;
+   width: 420px;
+   top: -50%;
+   transform: translateY(-50%);
+}
+span.p8{
+   height: 420px;
+   width: 300px;
+   top: -50%;
+   transform: translateY(-48%);
+}
+span.p9{
+   height: 400px;
+   width: 620px;
+   top: -50%;
+   transform: translateY(-47%);
+}
+span.p10{
+   height: 380px;
+   width: 620px;
+   top: -50%;
+   transform: translateY(-40%);
 }
 
 img{
@@ -54,10 +143,10 @@ div#Reference{
 /* Xbox 360 */
 div#Xbox360-background-1{
    z-index: 0;
-    background: radial-gradient(circle, #c9ff8c, rgb(5, 51, 9));
+    background: radial-gradient(circle, #DDF1AB, #50573e);
 }
 div#Xbox360-background-2{
-   background: radial-gradient(circle, #b8f177, rgb(30, 58, 35));
+   background: radial-gradient(circle, #b5e04f, #45530c);
 }
 #Xbox360-background-2 img{
    height: 450px;
@@ -69,10 +158,10 @@ div#Xbox360-background-2{
 /* Xbox One */
 div#XboxOne-background-1{
    z-index: 1;
-    background: radial-gradient(circle, #27a325, rgb(10, 71, 5));
+    background: radial-gradient(circle, #60A842, #1d3314);
 }
 div#XboxOne-background-2{
-   background: radial-gradient(circle, #218120, rgb(41, 122, 24));
+   background: radial-gradient(circle, #0a831a, rgb(23, 95, 9));
 }
 #XboxOne-background-2 img{
    bottom: -40%;
@@ -85,10 +174,10 @@ div#XboxOne-background-2{
 /* Xbox Series S */
 div#seriesS-background-1{
    z-index: 2;
-    background: radial-gradient(circle, rgb(235, 235, 235), rgb(15, 15, 15));
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(15, 15, 15));
 }
 div#seriesS-background-2{
-   background: radial-gradient(circle, rgb(255, 255, 255), rgb(66, 66, 66));
+   background: radial-gradient(circle, rgb(255, 255, 255), rgb(80, 79, 79));
 }
 #seriesS-background-2 img{
    height: 450px;
@@ -100,10 +189,10 @@ div#seriesS-background-2{
 /* Xbox Series X */
 div#seriesX-background-1{
    z-index: 3;
-    background: radial-gradient(circle, rgb(0, 143, 7), rgb(15, 15, 15));
+    background: radial-gradient(circle, #4b4b53, #1F1F22);
 }
 div#seriesX-background-2{
-   background: radial-gradient(circle, rgb(0, 105, 5), black);
+   background: radial-gradient(circle, #4b4b53, #16161a);
 }
 #seriesX-background-2 img{
    bottom: 1%;
@@ -116,7 +205,7 @@ div#seriesX-background-2{
 /* Playstation 2 */
 div#play2-background-1{
     z-index: 4;
-    background: radial-gradient(circle, rgb(43, 45, 70), rgb(15, 15, 15));
+    background: radial-gradient(circle, rgb(40, 41, 68), rgb(15, 15, 15));
 }
 div#play2-background-2{
    background: radial-gradient(circle, rgb(40, 48, 73), black);
